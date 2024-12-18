@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+.app-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #77091C;
+  color: white;
+}
+
+.header-inner-container {
+  padding: 20px 0;
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.login-button, .signup-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 15px;
+}
+
+.login-button {
+  background-color: #fff;
+  color: #007bff;
+}
+
+.signup-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.login-button:hover {
+  background-color: #ccc;
+}
+
+.signup-button:hover {
+  background-color: #218838;
+}
+
+.language-button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+
+.language-button:hover {
+  background-color: #0056b3;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 60px;
+}
+
+.app-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.basket-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f9;
+  min-height: calc(100vh - 88px);
+}
+
+.basket-main-container {
+  width: 90%;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.basket-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.basket-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.basket-empty-message {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #777;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.basket-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.basket-item {
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.basket-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.basket-item-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.basket-item-details {
+  padding-left: 0.5rem;
+  flex-grow: 1;
+}
+
+.basket-item-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.basket-item-year {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.basket-item-link {
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+}
+
+.basket-item-link:hover {
+  text-decoration: underline;
+}
+
+.back-button {
+  display: block;
+  margin: 2rem auto 0;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: red;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.back-button:hover {
+  background: rgb(141, 11, 11);
+}
+
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  padding: 2rem 0;
+  gap: 50px;
+}
+.container .container-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.container .container-left .container-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.container .container-right {
+  background: #ffffff;
+  border-radius: 12px;
+}
+.list-container {
+  width: 400px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 25%;
+}
+
+.list-input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.list-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.list-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: 0.4s;
+}
+
+.list-item:hover {
+  transform: scale(0.95);
+}
+
+.list-item-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.remove-item-button {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: #ff4d4f;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.save-button {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.save-button:hover {
+  background: #0056b3;
+}
+
+.save-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.go-to-basket-button {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #28a745;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-left: 130px;
+}
+
+.go-to-basket-button:hover {
+  background: #218838;
+}
+
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.search-input {
+  display: flex;
+  gap: 1rem;
+}
+
+.search input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.search button {
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.categories {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.categories button {
+  padding: 0.6rem 1rem;
+  background-color: #77091C;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.categories button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.categories button.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.movie-card-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.movie-card-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.movie-poster {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 2px solid #eee;
+}
+
+.movie-card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 180px;
+}
+
+.movie-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.release-year {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.movie-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.add-to-list-button {
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #77091C; 
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+}
+
+.add-to-list-button:hover {
+  background-color: #0056b3; 
+  transform: translateY(-2px);
+}
+
+.add-to-list-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
